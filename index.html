@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
   <!--HEAD-->
   <head>
     <meta charset="UTF-8" />
@@ -28,20 +28,23 @@
       <img
         src="https://jenesaispop.com/wp-content/uploads/2023/02/plazuela-3.jpg"
         alt="Integrantes del grupo musical La Plazuela"
+        title="Manuel y Luis, cantantes del grupo musical La Plazuela"
       />
       <nav>
         <ul>
-          <li><a href="#novedades.html">Novedades</a></li>
-          <li><a href="#gira.html">Gira</a></li>
-          <li><a href="#tienda.html">Tienda</a></li>
+          <li><a href="#novedades" accesskey="n">Novedades</a></li>
+          <li><a href="#gira" accesskey="g">Gira</a></li>
+          <li><a href="#tienda" accesskey="t">Tienda</a></li>
+          <li><a href="#contacto" accesskey="c">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <!--MAIN-->
     <main>
-      <section>
+      <section id="novedades">
+        <h2>Novedades</h2>
         <article>
-          <h2>La Caleta</h2>
+          <h3>La Caleta</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
             non quam officia minima aut illo laboriosam! At, nihil placeat? Eum
@@ -56,17 +59,69 @@
           ></video>
         </article>
       </section>
+      <section id="gira">
+        <h2>Gira</h2>
+        <ul>
+          <li>Barcelona</li>
+          <li>Cádiz</li>
+          <li>Valencia</li>
+        </ul>
+      </section>
+      <section id="tienda">
+        <h2>Tienda</h2>
+        <button data-action="eliminar" data-id="123">Eliminar</button>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Ante cualquier duda, rellena el siguiente formulario:</p>
+        <form action="#my-handling-form-page" method="post">
+          <ul>
+            <li>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre_usuario" />
+            </li>
+            <li>
+              <label for="mail">Correo electrónico:</label>
+              <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+              <label for="asunto">Asunto:</label>
+              <textarea id="asunto" name="asunto"></textarea>
+            </li>
+            <li>
+              <label for="comentario">Mensaje:</label>
+              <textarea id="comentario" name="comentario"></textarea>
+              <input type="submit" value="Enviar mensaje" />
+            </li>
+          </ul>
+        </form>
+      </section>
     </main>
     <!--FOOTER-->
     <footer>
-      <p>&copy; 2024 La Plazuela, Inc.</p>
       <a href="https://www.instagram.com/la_plazuela_/" target="_blank"
         ><img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"
-          width="200"
-          height="150"
           alt="Logo de Instagram"
       /></a>
+      <a href="https://www.facebook.com/laplazuelalp/" target="_blank"
+        ><img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+          alt="Logo de Facebook"
+      /></a>
+      <a href="https://www.youtube.com/@laplazuelaoficial" target="_blank"
+        ><img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+          alt="Logo de Youtube"
+      /></a>
+      <a
+        href="https://open.spotify.com/artist/3iNrNJ38T7OEaI1UofQcIB?si=9CFNDubUQziXJf5yLvF6Lg"
+        target="_blank"
+        ><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+          alt="Logo de Spotify"
+      /></a>
+      <p>&copy; 2024 La Plazuela, Inc.</p>
     </footer>
   </body>
 </html>
