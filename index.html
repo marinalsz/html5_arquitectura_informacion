@@ -4,39 +4,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Plazuela Official Site</title>
     <meta
       name="description"
-      content="Página web del grupo musical La Plazuela."
+      content="Página web de La Plazuela, grupo granadino de flamenco-electrónica."
     />
     <meta
       name="keywords"
       content="La Plazuela, música, actualidad, Granada, flamenco, electrónica"
     />
     <meta name="author" content="Marina López" />
-    <link
-      rel="shortcut icon"
-      href="https://img.freepik.com/psd-gratis/flor-cerezo-png-aislado-sobre-fondo-transparente_191095-10864.jpg?t=st=1715714843~exp=1715718443~hmac=361b562954d943018cfbd42201928e6bfde9548b7c6579b7bc83327292822a72&w=996"
-      type="image/png"
-    />
+    <link rel="shortcut icon" href="./assets/header.jpg" type="image/png" />
+    <title>La Plazuela Official Site</title>
   </head>
   <!--BODY-->
   <body>
     <!--HEADER-->
     <header>
-      <h1><a href="index.html">La Plazuela</a></h1>
       <img
-        src="https://jenesaispop.com/wp-content/uploads/2023/02/plazuela-3.jpg"
+        src="./assets/header.jpg"
         alt="Integrantes del grupo musical La Plazuela"
         title="Manuel y Luis, cantantes del grupo musical La Plazuela"
-        width="500px"
       />
+      <h1><a href="index.html">La Plazuela</a></h1>
       <nav>
         <ul>
           <li><a href="#novedades" accesskey="n">Novedades</a></li>
           <li><a href="#gira" accesskey="g">Gira</a></li>
           <li><a href="#tienda" accesskey="t">Tienda</a></li>
-          <li><a href="#contacto" accesskey="c">Contacto</a></li>
+          <li><a href="#suscribete" accesskey="s">Suscríbete</a></li>
         </ul>
       </nav>
     </header>
@@ -72,10 +67,10 @@
         <h2>Tienda</h2>
         <button data-action="eliminar" data-id="123">Eliminar</button>
       </section>
-      <section id="contacto">
-        <h2>Contacto</h2>
+      <section id="suscribete">
+        <h2>Suscríbete</h2>
         <p>Ante cualquier duda, rellena el siguiente formulario:</p>
-        <form action="#my-handling-form-page" method="post">
+        <form action="#null" method="post">
           <ul>
             <li>
               <label for="nombre">Nombre:</label>
@@ -100,35 +95,24 @@
     </main>
     <!--FOOTER-->
     <footer>
+      <ul class="footer-links">
+        <li><a href="#null">Sobre nosotros</a></li>
+        <li><a href="#null">Contáctanos</a></li>
+        <li><a href="#null">Política de privacidad</a></li>
+      </ul>
       <a href="https://www.instagram.com/la_plazuela_/" target="_blank"
-        ><img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"
-          alt="Logo de Instagram"
-          width="100px"
-          height="100px"
+        ><img src="./assets/instagram.png" alt="Logo de Instagram"
       /></a>
       <a href="https://www.facebook.com/laplazuelalp/" target="_blank"
-        ><img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
-          alt="Logo de Facebook"
-          width="100px"
-          height="100px"
+        ><img src="./assets/facebook.png" alt="Logo de Facebook"
       /></a>
       <a href="https://www.youtube.com/@laplazuelaoficial" target="_blank"
-        ><img
-          src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
-          alt="Logo de Youtube"
-          width="100px"
-          height="69.22px"
+        ><img src="./assets/youtube.png" alt="Logo de Youtube"
       /></a>
       <a
         href="https://open.spotify.com/artist/3iNrNJ38T7OEaI1UofQcIB?si=9CFNDubUQziXJf5yLvF6Lg"
         target="_blank"
-        ><img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
-          alt="Logo de Spotify"
-          width="100px"
-          height="100px"
+        ><img src="./assets/spotify.png" alt="Logo de Spotify"
       /></a>
       <p>&copy; 2024 La Plazuela, Inc.</p>
     </footer>
