@@ -123,10 +123,6 @@
               width="550"
             />
             <p>14,99€</p>
-            <form action="/" method="post">
-              <input type="hidden" name="producto_id" value="12345" />
-              <button type="submit">Comprar ahora</button>
-            </form>
           </li>
         </ul>
       </section>
@@ -172,9 +168,16 @@
           <label for="pais">Elige tu país:</label>
           <select name="pais" id="pais">
             <option value="">Selecciona un país</option>
-            <option value="españa">España</option>
-            <option value="portugal">Portugal</option>
-            <option value="argentina">Argentina</option>
+            <optgroup label="Europa">
+              <option value="españa">España</option>
+              <option value="portugal">Portugal</option>
+              <option value="francia">Francia</option>
+            </optgroup>
+            <optgroup label="Sudamérica">
+              <option value="argentina">Argentina</option>
+              <option value="colombia">Colombia</option>
+              <option value="brasil">Brasil</option>
+            </optgroup>
           </select>
           <button type="submit">Enviar</button>
         </form>
@@ -182,25 +185,36 @@
     </main>
     <!--FOOTER-->
     <footer>
-      <ul class="footer-links">
+      <ul class="info-links">
         <li><a href="#null">Sobre nosotros</a></li>
         <li><a href="#null">Contáctanos</a></li>
         <li><a href="#null">Política de privacidad</a></li>
       </ul>
-      <a href="https://www.instagram.com/la_plazuela_/" target="_blank"
-        ><img src="./assets/instagram.png" alt="Logo de Instagram"
-      /></a>
-      <a href="https://www.facebook.com/laplazuelalp/" target="_blank"
-        ><img src="./assets/facebook.png" alt="Logo de Facebook"
-      /></a>
-      <a href="https://www.youtube.com/@laplazuelaoficial" target="_blank"
-        ><img src="./assets/youtube.png" alt="Logo de Youtube"
-      /></a>
-      <a
-        href="https://open.spotify.com/artist/3iNrNJ38T7OEaI1UofQcIB?si=9CFNDubUQziXJf5yLvF6Lg"
-        target="_blank"
-        ><img src="./assets/spotify.png" alt="Logo de Spotify"
-      /></a>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.instagram.com/la_plazuela_/" target="_blank"
+            ><img src="./assets/instagram.png" alt="Logo de Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/laplazuelalp/" target="_blank"
+            ><img src="./assets/facebook.png" alt="Logo de Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@laplazuelaoficial" target="_blank"
+            ><img src="./assets/youtube.png" alt="Logo de Youtube"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://open.spotify.com/artist/3iNrNJ38T7OEaI1UofQcIB?si=9CFNDubUQziXJf5yLvF6Lg"
+            target="_blank"
+            ><img src="./assets/spotify.png" alt="Logo de Spotify"
+          /></a>
+        </li>
+      </ul>
+
       <p>&copy; 2024 La Plazuela, Inc.</p>
     </footer>
   </body>
