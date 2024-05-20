@@ -27,16 +27,6 @@
         loading="auto"
         width="300"
       />
-      <picture>
-        <source srcset="./assets/logo.png" media="(max-width: 480px)" />
-        <source srcset="./assets/logo.png" media="(max-width: 1024px)" />
-        <img
-          src="./assets/logo.png"
-          aalt="La Plazuela - Web logo"
-          sizes="(min-width: 1024px) 100vw, (min-width: 480px) 50vw, 33vw"
-        />
-      </picture>
-
       <h1><a href="index.html">La Plazuela</a></h1>
       <nav>
         <ul>
@@ -77,11 +67,32 @@
       </section>
       <section id="gira">
         <h2>Gira</h2>
-        <ul>
-          <li>Barcelona</li>
-          <li>Cádiz</li>
-          <li>Valencia</li>
-        </ul>
+        <ol>
+          <li>
+            <strong>Salamanca</strong> - 24 de mayo -
+            <a href="#null" target="_blank">Comprar entradas</a>
+          </li>
+          <li>
+            <strong>Murcia</strong> - 1 de junio -
+            <a href="#null" target="_blank">Comprar entradas</a>
+          </li>
+          <li>
+            <strong>Alicante</strong> - 6 de junio -
+            <a href="#null" target="_blank">Comprar entradas</a>
+          </li>
+          <li>
+            <strong>Santander</strong> - 10 de junio -
+            <a href="#null" target="_blank">Comprar entradas</a>
+          </li>
+          <li>
+            <strong>La Coruña</strong> - 15 de junio -
+            <a href="#null" target="_blank">Comprar entradas</a>
+          </li>
+          <li>
+            <strong>Santiago de Compostela</strong> - 19 de junio -
+            <a href="#null" target="_blank">Comprar entradas</a>
+          </li>
+        </ol>
       </section>
       <section id="tienda">
         <h2>Tienda</h2>
@@ -112,36 +123,60 @@
               width="550"
             />
             <p>14,99€</p>
+            <form action="/" method="post">
+              <input type="hidden" name="producto_id" value="12345" />
+              <button type="submit">Comprar ahora</button>
+            </form>
           </li>
         </ul>
-        <button data-action="eliminar" data-id="123">Eliminar</button>
       </section>
       <section id="suscribete">
         <h2>Suscríbete</h2>
         <p>Rellena el siguiente formulario si quiere recibir novedades:</p>
-        <form action="#null" method="post">
-          <label for="nombre">Nombre:</label>
+        <form
+          action="/"
+          method="post"
+          enctype="application/x-www-form-urlencoded"
+          target="_self"
+          accept-charset="UTF-8"
+          autocomplete="off"
+          novalidate
+        >
+          <label for="nombre">Introduce tu nombre:</label>
           <input
             type="text"
             name="nombre"
+            id="nombre"
             placeholder="Nombre completo"
             required
           />
-          <label for="correo">Email:</label>
+          <label for="correo">Introduce tu email:</label>
           <input
             type="email"
             name="correo"
+            id="correo"
             placeholder="Correo electrónico"
             required
           />
-          <label for="pais">País:</label>
-          <select name="pais">
-            <option value="">Elige tu país</option>
+          <label for="fecha_nacimiento"
+            >Introduce tu fecha de nacimiento:</label
+          >
+          <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" />
+          <label for="telefono">Introduce tu número de teléfono:</label>
+          <input
+            type="tel"
+            name="telefono"
+            placeholder="Teléfono"
+            id="telefono"
+          />
+          <label for="pais">Elige tu país:</label>
+          <select name="pais" id="pais">
+            <option value="">Selecciona un país</option>
             <option value="españa">España</option>
             <option value="portugal">Portugal</option>
             <option value="argentina">Argentina</option>
           </select>
-          <input type="submit" value="Suscribirse" />
+          <button type="submit">Enviar</button>
         </form>
       </section>
     </main>
